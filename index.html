@@ -7,26 +7,44 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>TraderNLPro - Tu App de Trading</h1>
+    <h1>TraderNLPro</h1>
 
-    <!-- Formulario de registro de trades -->
-    <form id="tradeForm">
-        <input type="text" id="pair" placeholder="Par (Ej: EUR/USD)" required><br>
-        <input type="text" id="entry" placeholder="Precio de entrada" required><br>
-        <input type="text" id="exit" placeholder="Precio de salida" required><br>
-        <input type="text" id="result" placeholder="Resultado (ganancia/pérdida)" required><br>
-        <textarea id="note" placeholder="Nota personal" required></textarea><br>
-        <button type="submit">Guardar Trade</button>
-    </form>
+    <!-- Frase motivacional -->
+    <section id="quoteSection">
+        <h2>Frase Motivacional de Hoy</h2>
+        <p id="quote"></p>
+    </section>
 
-    <h2>Mis Trades</h2>
-    <ul id="tradesList"></ul>
+    <!-- Formulario de registro de operaciones -->
+    <section id="journalSection">
+        <h2>Registrar Operación</h2>
+        <form id="tradeForm">
+            <input type="text" id="pair" placeholder="Par (Ej: EUR/USD)" required><br>
+            <input type="number" id="entry" placeholder="Precio de entrada" required><br>
+            <input type="number" id="exit" placeholder="Precio de salida" required><br>
+            <input type="number" id="result" placeholder="Resultado (ganancia/pérdida)" required><br>
+            <textarea id="note" placeholder="Nota personal" required></textarea><br>
+            <button type="submit">Guardar Operación</button>
+        </form>
+    </section>
 
-    <h2>Estadísticas</h2>
-    <p id="stats"></p>
+    <!-- Lista de operaciones -->
+    <section id="tradesSection">
+        <h2>Mis Operaciones</h2>
+        <ul id="tradesList"></ul>
+    </section>
 
-    <h2>Frase Motivacional de Hoy</h2>
-    <p id="quote"></p>
+    <!-- Estadísticas -->
+    <section id="statsSection">
+        <h2>Estadísticas</h2>
+        <p id="stats"></p>
+    </section>
+
+    <!-- Calendario -->
+    <section id="calendarSection">
+        <h2>Calendario de Operaciones</h2>
+        <ul id="calendarList"></ul>
+    </section>
 
     <script src="app.js"></script>
 </body>
