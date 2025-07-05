@@ -1,33 +1,40 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TraderNLPro</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>TraderNLPro - Tu App de Trading</h1>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+}
 
-    <!-- Formulario de registro de trades -->
-    <form id="tradeForm">
-        <input type="text" id="pair" placeholder="Par (Ej: EUR/USD)" required><br>
-        <input type="text" id="entry" placeholder="Precio de entrada" required><br>
-        <input type="text" id="exit" placeholder="Precio de salida" required><br>
-        <input type="text" id="result" placeholder="Resultado (ganancia/pérdida)" required><br>
-        <textarea id="note" placeholder="Nota personal" required></textarea><br>
-        <button type="submit">Guardar Trade</button>
-    </form>
+input, textarea {
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    background-color: #1e1e1e;
+    border: 1px solid #00ffcc;
+    color: #ffffff;
+}
 
-    <h2>Mis Trades</h2>
-    <ul id="tradesList"></ul>
+button {
+    padding: 10px 20px;
+    background-color: #00ffcc;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
 
-    <h2>Estadísticas</h2>
-    <p id="stats"></p>
+button:hover {
+    background-color: #00cc99;
+}
 
-    <h2>Frase Motivacional de Hoy</h2>
-    <p id="quote"></p>
+ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-    <script src="app.js"></script>
-</body>
-</html>
+li {
+    background-color: #1c1c1c;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
