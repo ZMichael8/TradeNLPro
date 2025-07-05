@@ -7,8 +7,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Bienvenido a TraderNLPro</h1>
-    <p>Tu app de gestión y análisis para traders.</p>
+    <h1>TraderNLPro - Tu App de Trading</h1>
+
+    <!-- Formulario de registro de trades -->
+    <form id="tradeForm">
+        <input type="text" id="pair" placeholder="Par (Ej: EUR/USD)" required><br>
+        <input type="text" id="entry" placeholder="Precio de entrada" required><br>
+        <input type="text" id="exit" placeholder="Precio de salida" required><br>
+        <input type="text" id="result" placeholder="Resultado (ganancia/pérdida)" required><br>
+        <textarea id="note" placeholder="Nota personal" required></textarea><br>
+        <button type="submit">Guardar Trade</button>
+    </form>
+
+    <h2>Mis Trades</h2>
+    <ul id="tradesList"></ul>
+
+    <h2>Estadísticas</h2>
+    <p id="stats"></p>
+
+    <h2>Frase Motivacional de Hoy</h2>
+    <p id="quote"></p>
 
     <script src="app.js"></script>
 </body>
